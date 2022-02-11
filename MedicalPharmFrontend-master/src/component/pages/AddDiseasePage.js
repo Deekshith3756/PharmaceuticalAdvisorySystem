@@ -24,6 +24,7 @@ export default function AddDiseasePage(props) {
         console.log(state);
         await axios.post("http://localhost:9090/mapDisease/add",state).then((result) => dispatch(addDisease(result.data)));
     }
+    
 
 
     return (
